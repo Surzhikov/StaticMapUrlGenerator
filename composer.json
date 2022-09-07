@@ -1,0 +1,19 @@
+{
+    "name": "surzhikov/static-map-url-generator",
+    "description": "Generate url of static map for maptiler.com",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Surzhikov\\StaticMapUrlGenerator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andrey Surzhikov",
+            "email": "andrey.surzhikov@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
