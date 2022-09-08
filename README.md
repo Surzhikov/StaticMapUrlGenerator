@@ -25,7 +25,7 @@ $map = Map::provider('maptiler')
 ```
 ```
 Will return:
-https://api.maptiler.com/maps/basic-v2/static/32.413403,34.765209,12/250x210@2x.png?key=[TOKEN_IS_HIDDEN]&attribution=0
+https://api.maptiler.com/maps/basic-v2/static/32.413403,34.765209,12/250x210@2x.png?key=[TOKEN_IS_HIDDEN]&attribution=1
 ```
 
 #### Bounded map example
@@ -47,7 +47,7 @@ $map = Map::provider('maptiler')
 
 ```
 Will return:
-https://api.maptiler.com/maps/streets-v2/static/11,51,14,54/250x210@2x.png?key=[TOKEN_IS_HIDDEN]&attribution=0
+https://api.maptiler.com/maps/streets-v2/static/11,51,14,54/250x210@2x.png?key=[TOKEN_IS_HIDDEN]&attribution=1
 ```
 
 #### Auto-fit map with polylines / markers example
@@ -81,7 +81,7 @@ $map = Map::provider('maptiler')
 
 ```
 Will return:
-https://api.maptiler.com/maps/streets-v2/static/auto/500x350.png?key=[TOKEN_IS_HIDDEN]&path=stroke:rgba(0,0,255,0.5)|width:2|fill:rgba(0,0,255,0.2)|enc:bcwRn|elJ{fYkhCudI~eBudI~zKc`G~sH}eQybH}mMe~E{}EhdPjqVdeIqsHor@coUnyCbPrxJbgY?nzKja@~fJ|c|@`ha@rb^leo@ePp}iAw}q@_x_Aim`Akug@mcW&path=stroke:%2300ff00|width:2|fill:rgba(0,255,0,0.5)|enc:nj}MbesqJkf`@sxJas^ujDi~TbhYbPxs^npNxeXfyw@?|bf@c`s@aeXi}L&markers=-60.70495605,-2.8003989,red&attribution=0
+https://api.maptiler.com/maps/streets-v2/static/auto/500x350.png?key=[TOKEN_IS_HIDDEN]&path=stroke:rgba(0,0,255,0.5)|width:2|fill:rgba(0,0,255,0.2)|enc:bcwRn|elJ{fYkhCudI~eBudI~zKc`G~sH}eQybH}mMe~E{}EhdPjqVdeIqsHor@coUnyCbPrxJbgY?nzKja@~fJ|c|@`ha@rb^leo@ePp}iAw}q@_x_Aim`Akug@mcW&path=stroke:%2300ff00|width:2|fill:rgba(0,255,0,0.5)|enc:nj}MbesqJkf`@sxJas^ujDi~TbhYbPxs^npNxeXfyw@?|bf@c`s@aeXi}L&markers=-60.70495605,-2.8003989,red&attribution=1
 ```
 
 #### Marker params
