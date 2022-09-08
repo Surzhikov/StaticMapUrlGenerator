@@ -8,6 +8,8 @@ Add package to your project via Composer:
 `composer require surzhikov/static-map-url-generator`
 
 #### Centered map example:
+<img src="https://user-images.githubusercontent.com/7311895/188896878-c81763a0-8b8c-41c0-90f6-f713396db1f5.png" width="250" >
+
 ```php
 <?php
 use \Surzhikov\StaticMapUrlGenerator\Map;
@@ -27,6 +29,8 @@ https://api.maptiler.com/maps/basic-v2/static/32.413403,34.765209,12/250x210@2x.
 ```
 
 #### Bounded map example
+<img src="https://user-images.githubusercontent.com/7311895/188898474-8a963085-6752-4b39-ae8a-936a90f180fe.png" width="250">
+
 ```php
 <?php
 use \Surzhikov\StaticMapUrlGenerator\Map;
@@ -40,12 +44,16 @@ $map = Map::provider('maptiler')
   ->bounds(11, 51, 14, 54) // Bounds: minLng, minLat, maxLng, maxLat
   ->url(); // Get URL for static map
 ```
+
 ```
 Will return:
 https://api.maptiler.com/maps/streets-v2/static/11,51,14,54/250x210@2x.png?key=[TOKEN_IS_HIDDEN]&attribution=0
 ```
 
 #### Auto-fit map with polylines / markers example
+
+<img src="https://user-images.githubusercontent.com/7311895/188896970-32701cd5-1378-47f4-be28-df9d4b25ecda.png" width="250">
+
 ```php
 <?php
 use \Surzhikov\StaticMapUrlGenerator\Map;
