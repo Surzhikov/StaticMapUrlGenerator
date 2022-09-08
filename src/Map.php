@@ -10,6 +10,7 @@ class Map
 	private int $width = 200;
 	private int $height = 100;
 	private bool $retina = false;
+	private bool $attribution = true;
 
 	private string|null $position = null;
 	private array $center = [0,0,1];
@@ -141,6 +142,15 @@ class Map
 			return $this;
 		}
 		throw new \Exception('Selected provider does not support maps padding');	
+	}
+
+	/**
+	 * Set attribution
+	 */
+	public function attribution(bool $attribution)
+	{
+		$this->attribution = $attribution;
+		return $this;
 	}
 
 	/**
@@ -302,7 +312,8 @@ class Map
 			$url.= 'markers=' . implode('|', $pathParams). '&';
 		}
 
-		$url.= 'attribution=0';
+		$url.= 'attribution=' . intval($this->attribution);
+
 		return $url;
 	}
 
